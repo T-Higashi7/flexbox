@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/* WEBフォントというものを読み込んでいます。このコメント行は削除してください。 */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700,900&display=swap');
+
+/* 初期設定 */
+#wrapper {
+    width: 100%;
+    line-height: 1.5;
+    font-family: 'Noto Sans JP', 'ヒラギノ角ゴ Pro W', 'Hiragino Kaku Gothic Pro', 'メイリオ', '游ゴシック', '游ゴシック体', sans-serif;
+    overflow: hidden;
+}
+
+/* コンテナー */
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 960px;
+    /* 上は0 左右はauto 下は120px*/
+    margin: 0 auto 120px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #ffffff;
+    background: #F2F2F2;
+}
+
+/* コンテンツ */
+.textA {
+    background: #F08E38;
+}
+.textB {
+    background: #78BF70;
+}
+.textC {
+    background: #5485F0;
+}
+/* 上記のように、共通しているようなスタイルは上の方に書いておくと良いでしょう。このコメント行は削除してください。 */
+
+/* ① */
+.flex-container1 {
+    justify-content: center;
+    padding-bottom: 6em;
+}
+.flex-container1 > .textA, .flex-container1 > .textB, .flex-container1 > .textC {
+    width: 25%;
+    padding: 0.25em 0.8em;
+}
+
+.flex-container2 {
+    justify-content: space-between;
+    padding-bottom: 10em;
+
+}
+
+②
+.flex-container2 > .textA .flex-container2 > .textB, .flex-container2 > .textC{
+    width: 240px;
+    
+}
+.flex-container2 > .textA{
+    width: 12em;
+}
+
+
+/* ③ */
+
+/* ④ */
+
+/* ⑤ */
+
+/* ⑥ */
